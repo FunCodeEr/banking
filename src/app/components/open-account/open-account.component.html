@@ -1,9 +1,13 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <div class="wrapper">
   <div class="header">
     <h2>Open a Savings Account</h2>
   </div>
   <div class="body">
-    <h3>Personal Details</h3>
+    <fieldset class="field">
+    <legend class="personaldetails" style="padding-top: 4px;">Personal Details</legend>
     <div class="formPanel">
       <form (ngSubmit)="openAccountcus()">
         <div>
@@ -131,7 +135,7 @@
           /><br />
         </div>
         <br />
-        <label>Residential Address</label>
+        <legend>Residential Address</legend>
         <br /><br />
         <div>
           <label for="address1" class="required-field">Address Line 1</label>
@@ -329,10 +333,11 @@
         <input type="checkbox" id="agreeCheckbox" required />
         <label>I agree...</label><br /><br />
         <div>
-          <button>Submit</button>
+          <button class="button">Submit</button>
         </div>
         <br /><br /><br /><br />
       </form>
     </div>
+  </fieldset>
   </div>
 </div>

@@ -3,6 +3,7 @@ import { ValidTransaction } from './../../model/validTransaction.model';
 import { BankingService } from './../../service/banking.service';
 import { Component, OnInit } from '@angular/core';
 import { GlobalConstants } from 'src/app/model/globa-constants';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-validate-transaction',
@@ -12,12 +13,13 @@ import { GlobalConstants } from 'src/app/model/globa-constants';
 export class ValidateTransactionComponent implements OnInit {
 
 
+
   
   result:any;
 
   validTransaction:ValidTransaction=new ValidTransaction();
 
-  constructor(private bankingService:BankingService,public global:GlobalConstants) { 
+  constructor(private bankingService:BankingService,public global:GlobalConstants, http:HttpClient) { 
     this.validTransaction.accountId=this.accountId;
   }
 

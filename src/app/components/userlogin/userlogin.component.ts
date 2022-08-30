@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from 'src/app/model/user.model';
 import { Registration } from 'src/app/model/registration.model';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-userlogin',
@@ -33,6 +34,7 @@ export class UserloginComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    
   }
 
   userlogin(){

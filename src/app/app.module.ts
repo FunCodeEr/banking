@@ -21,6 +21,9 @@ import { AccountSummaryComponent } from './components/account-summary/account-su
 import { ValidateTransactionComponent } from './components/validate-transaction/validate-transaction.component';
 import { UserloginComponent } from './components/userlogin/userlogin.component';
 import { HomeComponent } from './components/home/home.component';
+import { ForgotUserComponent } from './components/forgot-user/forgot-user.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { ChangeidpasswordComponent } from './components/changeidpassword/changeidpassword.component';
 
 
 @NgModule({
@@ -40,7 +43,10 @@ import { HomeComponent } from './components/home/home.component';
     AccountSummaryComponent,
     ValidateTransactionComponent,
     UserloginComponent,
-    HomeComponent
+    HomeComponent,
+    ForgotUserComponent,
+    ForgotPasswordComponent,
+    ChangeidpasswordComponent,
 
     
   ],

@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { BankingService } from './../../service/banking.service';
 import { Component, OnInit } from '@angular/core';
 import { GlobalConstants } from 'src/app/model/globa-constants';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({

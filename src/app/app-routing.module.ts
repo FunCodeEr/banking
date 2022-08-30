@@ -15,6 +15,9 @@ import { AccountStatementComponent } from './components/account-statement/accoun
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountSummaryComponent } from './components/account-summary/account-summary.component';
+import { ForgotUserComponent } from './components/forgot-user/forgot-user.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { ChangeidpasswordComponent } from './components/changeidpassword/changeidpassword.component';
 
 const routes: Routes = [
   {path:'accountStatement',component:AccountStatementComponent},
@@ -29,7 +32,10 @@ const routes: Routes = [
   {path:'login',component:UserloginComponent},
   {path:'home', component:HomeComponent},
   {path:'openAccount',component:OpenAccountComponent},
-  {path:'addNewBeneficiary', component:AddNewBeneficiaryComponent}
+  {path:'addNewBeneficiary', component:AddNewBeneficiaryComponent},
+  {path:'forgotuserid', component:ForgotUserComponent},
+  {path:'forgotpassword', component:ForgotPasswordComponent},
+  {path:'changeidpassword', component:ChangeidpasswordComponent}
 
 ];
 
@@ -37,4 +43,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+}

@@ -3,7 +3,7 @@
   var month = todayDate.getMonth();
   var year = todayDate.getUTCFullYear();
   var tdate = todayDate.getDate();
-  if (month < 9) {
+  if (month < 10) {
     month = "0" + month;
   }
   if (date < 10) {
@@ -16,7 +16,8 @@
 </script>
 <app-nav-bar></app-nav-bar>
 <div class="accountStmtWrapper">
-  <header class="main-head">Account Statement</header>
+  <header class="main-head">Account Statement
+    </header>
   <article [hidden]="beforeSubmit" class="content">
     <div class="date">
       <label for="from">Statement from</label>
@@ -24,13 +25,13 @@
         [(ngModel)]="filterTransaction.startDate"
         type="date"
         id="startDate"
-        max="2022-08-03"
+        max="2021-09-03"
       />
       <label for="to">to</label>
       <input
         [(ngModel)]="filterTransaction.endDate"
         type="date"
-        max="2022-08-03"
+        max="2022-10-03"
       />
     </div>
     <div class="accountGrid">

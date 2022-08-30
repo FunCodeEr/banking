@@ -4,10 +4,15 @@
   justify-content: center;
   align-items: center;
 }
+*{
+  background-color: white;
+  background-repeat: none;
+}
+
 
 .header {
   border: 3px solid black;
-  background-color: #8a817c;
+  background-color: #e7c9b9;
   padding: 2px 15px;
   width: 35%;
   height: 20%;
@@ -15,7 +20,7 @@
 }
 
 .header h2 {
-  background-color: #8a817c;
+  background-color: #e7c9b9;
 }
 
 .body {
@@ -80,4 +85,66 @@ form button {
 form .required-field::after {
   content: "*";
   color: red;
+}
+
+.personaldetails{
+  font-weight: bold;
+  font-size:25px;
+  padding:2px;
+  color:rgb(168, 107, 107);
+  background-color: white;
+}
+
+.body{
+  width:900px;
+  padding-top:4px;
+
+}
+
+input{
+  border-radius: 10px;
+}
+select{
+  border-radius: 10px;
+}
+
+
+.button {
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: white;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.body{
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 2px;
+  border-radius: 8px;
+  background-color: #e7c9b9;
+  color:yellowgreen;
 }

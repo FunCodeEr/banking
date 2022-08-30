@@ -50,10 +50,15 @@
         <div>
           <label for="bname">Transaction Date</label>
           <p>-</p>
-          <input type="date" id="rtgsTransaction" />
+          <input type="date" id="rtgsTransaction" name="rtgsTransaction"/>
+          <script>
+            currentDate = new Date().toJSON().slice(0, 10);
+            document.getElementById("rtgsTransaction").innerHTML = currentDate;
+          </script>
         </div>
         <div>
           <label for="bname">Maturity Instructions</label>
+
           <p>-</p>
           <input type="text" id="rtgsMatInst" />
         </div>

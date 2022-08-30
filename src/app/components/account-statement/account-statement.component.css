@@ -32,7 +32,7 @@ tr:nth-child(even) {
   margin: 10px;
   height: 70px;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 70px;
   border: 2px solid black;
 }
@@ -51,7 +51,7 @@ tr:nth-child(even) {
   height: 3rem;
   display: block;
   float: right;
-  padding: 5px;
+  padding: 35px;
 }
 
 .content .date label {
@@ -87,6 +87,7 @@ tr:nth-child(even) {
   grid-area: side;
   background-color: #a5a5a5;
   border: 1px solid black;
+  margin-top:5px
 }
 
 .side ul li a {
